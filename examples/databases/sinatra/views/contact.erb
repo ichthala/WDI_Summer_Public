@@ -1,2 +1,11 @@
 <h1>hello from contacts/<%= @contact['first'] %></h1>
+
+<p><%= @contact['first']%> <%= @contact['last']%></p>
+<p>Age <%= @contact['age']%></p>
 <p><%= @contact['phone'] %></p>
+
+<a href=<%="/contacts/#{@contact['id']}/edit" %>>Edit Contact</a>
+
+<form action="/contact/delete" method="get">
+  <button>Delete Contact</button>
+</form>

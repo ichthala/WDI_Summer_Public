@@ -1,0 +1,8 @@
+<h1>Let's edit a contact</h1>
+
+<form action="/contacts/<%= @contact['id'] %>" method="post">
+  <input type="text" name="first" value="<%= @contact['first'] %>" autofocus>
+  <input type="text" name="last" value="<%= @contact['last'] %>">
+  <input type="text" name="age" value="<%= @contact['age'] %>">
+  <button>Done!</button>
+</form>
