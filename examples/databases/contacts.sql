@@ -1,7 +1,10 @@
 -- Creates a table in our address_book database
 -- Requires a database called address_book
 -- Run from the terminal with psql -d address_book -f contacts.sql
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 DROP TABLE contacts;
 CREATE TABLE contacts
 (
