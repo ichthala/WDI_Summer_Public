@@ -1,0 +1,12 @@
+<h1>What up, <%= @dog.name %></h1>
+
+<!--
+  Go to the dogs controller and do the edit action
+  The edit action renders a form
+  The form should already be populated with the dog's info
+ -->
+<a href="/dogs/<%= @dog.id %>/edit">Edit Dog</a>
+<form action="/dogs/<%= @dog.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete Dog</button>
+</form>
